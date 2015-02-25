@@ -1,17 +1,23 @@
 $('.menu-link').click(function() {
   $('#slider').toggleClass('active');
   $('.container').toggleClass('active');
-  $('.main-content').toggleClass('active');
+  $('.img-half').toggleClass('active');
   $($(this).attr('href')).removeClass('hidden');//here you find the section and make it visible
 });
 
 $('.menu-close').click(function() {
   $('#slider').toggleClass('active');
   $('.container').toggleClass('active');
-  $('.main-content').toggleClass('active');
+  $('.img-half').toggleClass('active');
   $(this).parent().addClass('hidden');//here you hide the section
 });
 
+
+/*$('.hop-icon').on('click', function() {
+  $('header').toggleClass('expanded');
+  $('.main-content').toggleClass('padding-top');
+});
+*/
 
 
 

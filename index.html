@@ -12,128 +12,142 @@
 <body>
 	<div class="container">
 
-		<header>
+		<!--<header>
 			<div class="beer-dropdown">
-				<a href="#"><img class="tossing" src="img/hops_teaser.png" alt=""></a>
+				<a class="hop-icon" href="#"><img class="tossing" src="img/hops_teaser.png" alt=""></a>
+				<div class="dropdown-inner">
+					<h1>about this project</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, quis, sequi? Quia, quas, dolorum! Quas, autem corporis quae commodi, odit doloribus pariatur inventore dolorum quam asperiores! Consequatur molestiae, numquam asperiores.</p>
+				</div>
 			</div>
-		</header>
+		</header>-->
 
 		<section id="slider">
-			<div id="section-1" class="fullpage content hidden">
-				<a href="#slider"></a>
-				<h1>Header</h1>
-				<a href="#" class="menu-close">⇉</a>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo aliquid iste consectetur incidunt dolorem inventore rerum, tempore quis nulla iure eveniet nostrum, saepe itaque mollitia modi ex. Cum, nam odio.</p>
+			<article id="section-1" class="fullpage hidden">
+				<div class="row clearfix">
+					<div class="column half">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt velit fugiat reprehenderit, placeat odit porro, blanditiis saepe tenetur dignissimos aut voluptatem praesentium adipisci libero nihil nobis harum repellat. Ratione, nisi.</p>
+					</div>
 
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo aliquid iste consectetur incidunt dolorem inventore rerum, tempore quis nulla iure eveniet nostrum, saepe itaque mollitia modi ex. Cum, nam odio.</p>
-			</div>
+					<div class="column half">
+						<div class="img-half">
+							<a href="#" class="menu-close">⇉</a>
+							<h1 class="hed-small">The Upstart</h1>
+						</div>
+					</div>
+				</div>
+			</article>
 
-			<div id="section-2" class="fullpage hidden">
+			<article id="section-2" class="fullpage hidden">
 				<a href="#slider"></a>
 				<h1>Header</h1>
 				<a href="#" class="menu-close">⇉</a>
 				<p>porem ipsum dolor sit amet, consectetur adipisicing elit. Quo aliquid iste consectetur incidunt dolorem inventore rerum, tempore quis nulla iure eveniet nostrum, saepe itaque mollitia modi ex. Cum, nam odio.</p>
 
 				<p>porem ipsum dolor sit amet, consectetur adipisicing elit. Quo aliquid iste consectetur incidunt dolorem inventore rerum, tempore quis nulla iure eveniet nostrum, saepe itaque mollitia modi ex. Cum, nam odio.</p>
-			</div>
+			</article>
 
-			<div id="section-3" class="fullpage hidden">
+			<article id="section-3" class="fullpage hidden">
 				<a href="#slider"></a>
 				<h1>Header</h1>
 				<a href="#" class="menu-close">⇉</a>
 				<p>snorem ipsum dolor sit amet, consectetur adipisicing elit. Quo aliquid iste consectetur incidunt dolorem inventore rerum, tempore quis nulla iure eveniet nostrum, saepe itaque mollitia modi ex. Cum, nam odio.</p>
-			</div>
+			</article>
 		</section>
 
-		<section class="row clearfix main-content fullpage">
+		<section class="row clearfix main-content">
 			<div class="column half">
-				<div class="faces-container">
-					<div id="faces">
+				<div class="faces-container fullpage">
+					<div class="faces-hed">
+						<h1 class="hed-small">The Brewers</h1>
+						<img src="img/hops_teaser.png" alt="">
+					</div>
+					<div class="faces">
 						<a href="#section-1" class="menu-link">
-							<div class="faces-overlay pollyanna-overlay">
-								<p>Brian Pawola</p>
-								<p>Pollyanna Brewing Company</p>
-								<p>Lamont, IL</p>
-							</div>
 							<picture>
-								<source srcset="img/brian_mug_lrg.jpg" media="(min-width: 800px)">
+								<source srcset="img/brian_mug_lrg.png" media="(min-width: 800px)">
 								<source srcset="img/brian_mug_small.jpg" media="(min-width: 400px)">
 								<img srcset="img/brian_mug_small.jpg" alt="Brian Pawolla">
 							</picture>
+							<div class="faces-info">
+								<p class="hed">Brian Pawola</p>
+								<p class="subhead">Pollyanna Brewing Company</p>
+								<p class="subhead">Lamont, IL</p>
+							</div>
 						</a>
 						<a href="#section-2" class="menu-link">
-							<div class="faces-overlay temperance-overlay">
-								<p>Josh Gilbert</p>
-								<p>Temperance Brewing Co.</p>
-								<p>Evanston, IL</p>
-							</div>
 							<picture>
-								<source srcset="img/gilbert_mug_lrg.jpg" media="(min-width: 800px)">
+								<source srcset="img/gilbert_mug_lrg.png" media="(min-width: 800px)">
 								<source srcset="img/gilbert_mug_small.jpg" media="(min-width: 400px)">
 								<img srcset="img/gilbert_mug_small.jpg" alt="Josh Gilbert">
 							</picture>
+							<div class="faces-info">
+								<p class="hed">Josh Gilbert</p>
+								<p class="subhead">Temperance Brewing Co.</p>
+								<p class="subhead">Evanston, IL</p>
+							</div>
 						</a>
 						<a href="#section-3" class="menu-link">
-							<div class="faces-overlay miller-overlay">
-								<p>Jeff Koopmeiners</p>
-								<p>MillerCoors</p>
-								<p>Boston, MA</p>
-							</div>
 							<picture>
-								<source srcset="img/koop_mug_lrg.jpg" media="(min-width: 800px)">
+								<source srcset="img/koop_mug_lrg.png" media="(min-width: 800px)">
 								<source srcset="img/koop_mug_small.jpg" media="(min-width: 400px)">
 								<img srcset="img/koop_mug_small.jpg" alt="Jeff Koop">
 							</picture>
+							<div class="faces-info">
+								<p class="hed">Jeff Koopmeiners</p>
+								<p class="subhead">MillerCoors</p>
+								<p class="subhead">Boston, MA</p>
+							</div>
 						</a>
 						<a href="#section-4" class="menu-link">
-							<div class="faces-overlay mkb-overlay">
-								<p>Jim McCabe</p>
-								<p>Milwaukee Brewing Co.</p>
-								<p>Milwaukee, WI</p>
-							</div>
 							<picture>
-								<source srcset="img/mccabe_mug_lrg.jpg" media="(min-width: 800px)">
+								<source srcset="img/mccabe_mug_lrg.png" media="(min-width: 800px)">
 								<source srcset="img/mccabe_mug_small.jpg" media="(min-width: 400px)">
 								<img srcset="img/mccabe_mug_small.jpg" alt="Jim McCabe">
 							</picture>
+							<div class="faces-info">
+								<p class="hed">Jim McCabe</p>
+								<p class="subhead">Milwaukee Brewing Co.</p>
+								<p class="subhead">Milwaukee, WI</p>
+							</div>
 						</a>
 						<a href="#section-5" class="menu-link">
-							<div class="faces-overlay lakefront-overlay">
-								<p>Russ Klisch</p>
-								<p>Lakefront Brewery</p>
-								<p>Milwaukee, WI</p>
-							</div>
 							<picture>
-								<source srcset="img/russ_mug_lrg.jpg" media="(min-width: 800px)">
+								<source srcset="img/russ_mug_lrg.png" media="(min-width: 800px)">
 								<source srcset="img/russ_mug_small.jpg" media="(min-width: 400px)">
 								<img srcset="img/russ_mug_small.jpg" alt="Russ Klisch">
 							</picture>
+							<div class="faces-info">
+								<p class="hed">Russ Klisch</p>
+								<p class="subhead">Lakefront Brewery</p>
+								<p class="subhead">Milwaukee, WI</p>
+							</div>
 						</a>
-						<a href="#section-6">
+						<!--<a href="#section-6">
 							<picture>
 								<source srcset="img/filler_lrg.jpg" media="(min-width: 800px)">
 								<source srcset="img/filler_small.jpg" media="(min-width: 400px)">
 								<img srcset="img/filler_small.jpg" alt="A filler image">
-							</picture>
+							</picture>-->
 						</a>
 					</div>
 				</div>
 			</div>
 
 			<div class="column half">
-				<section class="main-right">
-					<div class="main-right-inner contain">
-						<h1 class="main-right-hed">
-							<span class="spanblock hed-small">Honing their</span>
-							<span class="spanblock hed-script">Craft</span>
-						</h1>
-					<p class="graph graph-primary">Beer drinkers aren’t likely to remember a time without pale ales, stouts, or porters, but it’s been only 15 years since the small batch, full-flavored and independently owned beers have returned to tap handles and supermarket shelves with a vengeance.</p>
-					
-					<p class="graph graph-primary">Unhappy corporate types have been fleeing their office jobs in droves to chase their beer crafting dreams. Some have become fabulously wealthy, a few have failed, and most have carved out a little niche for themselves by doing a few beers well. But with a new brewery opening in the United States every day, the competition is fierce. The small breweries of a decade ago are now the established beer suppliers and barriers to entry of today.</p>
-					
-					<p class="graph graph-primary">Nearly 30 years after craft brewing started in earnest, the industry is coming to a head. Can the eager upstarts survive in the face of seasoned veterans and corporate behemoths?</p>
+				<div class="large-images">
+					<article class="actual-img">
+						<picture>
+							<source srcset="img/russ_very_lrg.jpg" media="(min-width: 800px)">
+							<source srcset="img/pool_small.jpg" media="(min-width: 400px)">
+							<img srcset="img/pool_small.jpg" alt="filler">
+						</picture>
+					</article>
+
+					<div class="large-img-overlay">
+						<h1>The Veteran</h1>
 					</div>
-				</section>
+				</div>
 			</div>
 		</section><!--row-->
 	
