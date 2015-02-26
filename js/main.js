@@ -1,4 +1,4 @@
-$('.menu-link').click(function() {
+/*$('.menu-link').click(function() {
   $('#slider').toggleClass('active');
   $('.container').toggleClass('active');
   $('.img-half').toggleClass('active');
@@ -11,13 +11,8 @@ $('.menu-close').click(function() {
   $('.img-half').toggleClass('active');
   $(this).parent().addClass('hidden');//here you hide the section
 });
-
-
-/*$('.hop-icon').on('click', function() {
-  $('header').toggleClass('expanded');
-  $('.main-content').toggleClass('padding-top');
-});
 */
+
 
 
 

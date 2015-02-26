@@ -190,16 +190,13 @@ NORMALIZE.css
 
 	.main-content {
 		position: relative;
+		height: 100%;
+		width: 100%;
 		-webkit-transition: 1.15s ease;
         -moz-transition: 1.15s ease;
         -o-transition: 1.15s ease;
         transition: 1.15s ease;
    	} 
-
-  	.main-right {
-
-	}
-
 
 
 	/* Brewers */
@@ -209,7 +206,7 @@ NORMALIZE.css
 		text-align: center;
 		position: relative;
 		z-index: 999;
-		margin-top: 1.6em;
+		margin-top: 3.2em;
 		background: transparent;
   	}
 
@@ -217,6 +214,7 @@ NORMALIZE.css
   		text-align: center;
   		max-width: 700px;
   		margin: 0 auto;
+  		padding-top: 3.2em;
   	}
 
   	.faces img {
@@ -235,11 +233,6 @@ NORMALIZE.css
   		opacity: .4;	
   	}
 
-  	.faces-hed img {
-  		padding-top: 1.2em;
-  		padding-bottom: 1.2em;
-  	}
-
 	.faces a {
 		display: inline-block;
 		/*margin-right: -3px;
@@ -250,42 +243,74 @@ NORMALIZE.css
 		margin: 1.6em;
  	}
 
- 	.large-images {
- 		overflow: hidden;
+
+ 	/* Large Images */
+
+ 	.lrg-images {
+ 		height: 100%;
+ 		width: 100%; 
+ 		position: relative;
  	}
 
-	.actual-img {
-		position: absolute; 
-		top: 0; 
-		left: 50%; 
-		right: 0; 
-		bottom: 0; 
-		margin: auto; 
-		min-width: 50%;
-		min-height: 50%;
-		-webkit-transition:.3s ease all;
-
-	}
-
-	.large-img-overlay {
-		background: rgba(0,0,0,.5);
+	.lrg-img {
 		position: absolute;
-		top: 100%;
+		margin: auto; 
 		left: 0;
+		top: 0;
 		right: 0;
 		bottom: 0;
-		height: 450px;
-		width: 100%;
- 		-webkit-transition:.3s ease all;
-	}
-	
-	.large-images:hover > div  {
-		-webkit-transform:translateY(-100%);
+		min-width: 50%;
+		min-height: 50%;
+		width: 150%;
+		height: 150%;
+		-webkit-transition:.3s ease all;
 	}
 
-	.large-img-overlay h1 {
-		color: blue;
+	.lrg-img:target {
+		webkit-transition:.3s ease all;
+		z-index: 2;
 	}
+
+	.lrg-img-overlay {
+ 		position: absolute; 
+ 		width: 400px;
+ 		height: 400px;
+ 		margin-top: 200px;
+ 		margin-left: 200px;
+		top: 0;
+		left: 0; 
+		right: 0; 
+		bottom: 0; 
+		-webkit-transition:.3s ease all;
+	}
+
+	.lrg-images img:hover > h1 {
+		color: red;
+	}
+	
+	.lrg-images:hover > div  {
+		/*-webkit-transform:translateX(100vw);*/
+	}
+
+	button {
+		display: block;
+		padding: 4px;
+	}
+	
+	.menu-link {
+		cursor: pointer;
+		font-size: 14px;
+		color:black;
+		padding: .5em 2em;
+		letter-spacing: .1em;
+		border-radius: 3px;
+ 		-webkit-transition:.1s ease all;
+		-moz-transition:.1s ease all;
+		-ms-transition:.1s ease all;
+		-o-transition:.1s ease all;
+		transition:.1s ease all;
+	}
+
 
 
 
@@ -404,29 +429,10 @@ NORMALIZE.css
         transform: translate(100%, 0);
 	}
 
-
-	.img-half {
-		background: url('../img/pool_lrg.jpg') 0 0 no-repeat;
-		background-size: cover;
-		height: 100vh; 
-		position: relative;
-
-	}
-
 	.menu-close {
 		position: absolute;
 		top: 10%;
 		left: 10%;
-	}
-
-	.img-half.active {
-		visibility: visible;
-	}
-
-	.img-half h1 {
-		color: orange;
-		font-size: 50px;
-		opacity: .8;
 	}
 
 	.hidden {
